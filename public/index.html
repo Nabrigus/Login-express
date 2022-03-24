@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Login</title>
+</head>
+<body>
+
+    <header>
+        <div class="center_box"> 
+            <div class="box_login">
+                <div class="box_C">
+                    <h2>Login</h2><img src="img/Logo-page.png" alt="logo-img">
+                </div>
+                 <!-- CAJA INGRESA -->
+                <form action="/api/auth/login" method="post">
+
+                    <!-- CAJA Correo -->
+                    <div class="boxL B7">
+                    <label for="" class="label_text">Correo Electronico</label>
+                    </div>
+                    
+                    <div class="box_D">
+                    <input id="correoL" name="correoL" class="desing_input" type="text" placeholder="Ingrese E-mail" autocomplete="off">
+                    </div>
+
+                    <!-- CAJA PASSWORD-->
+                    <div class="boxL">
+                    <label for="" class="label_text">Password</label>
+                    </div>
+                    
+                    <div class="box_D">
+                    <input id="passwordL" name="passwordL" class="desing_input" type="text" placeholder="Ingrese Password" autocomplete="off">
+                    </div>
+                    
+                    <div class="box_D B7">
+                        <button type="submit" class="button_enviar">Ingresar</button>
+                    </div>
+
+                </form>
+            </div>
+
+            <!-- CAJA REGISTRO -->
+            <div class="box_registro">
+                
+                <div class="box_C">
+                    <h2>Check-in</h2><img src="img/Logo-page.png" alt="logo-img">
+                </div>
+                <form action="/api/url/check/On" method="post">
+                    <!-- CAJA NOMBRE -->
+                    <div>
+                    <label for="" class="label_text">Nombre</label>
+                    </div>
+                    
+                    <div class="box_D">
+                    <input id="nombreR" name="nombreR" class="desing_input" type="text" placeholder="Ingrese Nombre" autocomplete="off">
+                    </div>
+
+                    <!-- CAJA CORREO -->
+                    <div class="boxL">
+                    <label for="" class="label_text">Correo Electronico</label>
+                    </div>
+
+                    <div class="box_D">
+                    <input id="correoR" name="correoR" class="desing_input" type="text" placeholder="Ingrese E-mail" autocomplete="off">
+                    </div>
+                    
+                    <!-- CAJA EDAD -->
+                    <div class="boxL">
+                    <label for="" class="label_text">Edad</label>
+                    </div>
+
+                    <div class="box_D">
+                    <input id="edadR" name="edadR" class="desing_input" type="number" placeholder="Ingrese Edad" autocomplete="off">
+                    </div>
+             
+                    <!-- CAJA PASSWORD -->
+             
+                    <div class="boxL">
+                    <label for="" class="label_text"> Create Password</label>
+                    </div>
+
+                    <div class="box_D">
+                    <input id="passwordR" name="passwordR" class="desing_input" type="password" placeholder="Ingrese Contraseña " autocomplete="off">
+                    </div>
+                    <div class="box_D">
+                        <select name="generoR" id="generoR" class="generoR">
+                            <option>Genero</option>
+                            <option>Hombre</option>
+                            <option>Mujer</option>
+                            <option>Prefiero no decirlo</option>
+                        </select>
+                    </div>
+                    <div class="box_D">
+                        <select name="rolR" id="rolR" class="generoR">
+                            <option>Rol</option>
+                            <option>ADMIN_ROLE</option>
+                            <option>USER_ROLE</option>
+                        </select>
+                    </div>
+
+                    <div class="box_D">
+                        <button type="submit" class="button_enviar">Enviar</button>
+                    </div>
+
+
+                </form>
+            
+            </div>
+        </div>
+    </header>
+</body>
+</html>
